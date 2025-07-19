@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+import 'Home.dart';
+class myApp extends StatefulWidget {
+  const myApp({super.key});
+
+  @override
+  State<myApp> createState() => _myAppState();
+}
+
+class _myAppState extends State<myApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+          appBarTheme:
+          AppBarTheme(
+              color: Colors.blueGrey
+          ),
+          primaryColor: Colors.red,
+          scaffoldBackgroundColor: Colors.brown,
+          elevatedButtonTheme: ElevatedButtonThemeData(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.amber,
+              )
+          )
+      ),
+      title: "this is 4th day",
+      home: Home(),
+    );
+  }
+}
