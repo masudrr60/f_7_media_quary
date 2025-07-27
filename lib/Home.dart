@@ -50,22 +50,22 @@ class _HomeState extends State<Home> {
 
           SizedBox(height: 20,),
 
-
           Expanded(child: Padding(padding: const EdgeInsets.all(8.0),
             child: GridView.count(
-              crossAxisCount: 3,
-              crossAxisSpacing: 10,
+              crossAxisCount: 5,
+              crossAxisSpacing: 5,
               mainAxisSpacing: 5,
               children:List.generate(
-                100,
+                10,
                   (index) =>Container(
                     color: Colors.cyanAccent,
                   )),
             ),
           ),),
-          SizedBox(
-            height: 10,
-          ),
+          SizedBox(height: 10,),
+
+
+
 
         ],
       )
